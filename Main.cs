@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Text;
 
+using TPMODUL4103022400138;
+
 class Program
 {
     static void Main(string[] args)
@@ -18,5 +20,17 @@ class Program
         Console.WriteLine("Sekejati    : " + kodePos.getKodePos("Sekejati"));
         Console.WriteLine("Kebonwaru   : " + kodePos.getKodePos("Kebonwaru"));
         Console.WriteLine("Maleer      : " + kodePos.getKodePos("Maleer"));
+
+        Console.WriteLine("");
+
+        DoorMachine door = new DoorMachine();
+
+        door.BukaPintu();
+
+        door.KunciPintu();
+
+        door.BukaPintu();
+
+        door.BukaPintu();
     }
 }
